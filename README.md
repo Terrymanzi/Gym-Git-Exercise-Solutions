@@ -289,6 +289,96 @@ To https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git
 ### EXERCISE 2 (terminal history)
 ```bash
 
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign)
+$ ls
+README.md  about.html  home.html  index.html  services.html  style.css  team.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign)
+$ git diff main
+diff --git a/services.html b/services.html
+index d55881c..b8dee02 100644
+--- a/services.html
++++ b/services.html
+@@ -1,4 +1,4 @@
+ <html>
+   <head><title>Services</title></head>
+-  <body><h1>Our Services</h1><p>Explore the variety of services we now offer, including our new premium options.</p></body>
++  <body><h1>Our Updated Services</h1><p>We have restructured our services to provide better value.</p></body>
+ </html>
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign)
+$ git merge main
+Auto-merging services.html
+CONFLICT (content): Merge conflict in services.html
+Automatic merge failed; fix conflicts and then commit the result.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ vi services.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ vi services.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ vi services.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ git merge main
+error: Merging is not possible because you have unmerged files.
+hint: Fix them up in the work tree, and then use 'git add/rm <file>'
+hint: as appropriate to mark resolution and make a commit.
+fatal: Exiting because of an unresolved conflict.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ git add servies.html
+fatal: pathspec 'servies.html' did not match any files
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ ls
+README.md  about.html  home.html  index.html  services.html  style.css  team.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ git add services.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign|MERGING)
+$ git commit -m "resolved conflicts and merged main into ft/service-redesign"
+[ft/service-redesign 09ae2d5] resolved conflicts and merged main into ft/service-redesign
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign)
+$ git push
+fatal: The current branch ft/service-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/service-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign)
+$ git push origin ft/service-redesign
+Enumerating objects: 1, done.
+Counting objects: 100% (1/1), done.
+Writing objects: 100% (1/1), 245 bytes | 245.00 KiB/s, done.
+Total 1 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git
+   1b701eb..09ae2d5  ft/service-redesign -> ft/service-redesign
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/service-redesign)
+$
 ```
 
 ## BUNDLE 3
