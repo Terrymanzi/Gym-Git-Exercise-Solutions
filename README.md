@@ -1,7 +1,7 @@
 # Gym-Git-Exercise-Solutions
 
-## Bundle 1
-### Exercise 1 (terminal history)
+## BUNDLE 1
+### EXERCISE 1 (terminal history)
 ```bash
 Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1
 $ git init
@@ -93,7 +93,7 @@ branch 'master' set up to track 'origin/master'.
 
 ```
 
-### Exercise 2 (terminal history)
+### EXERCISE 2 (terminal history)
 ```bash
 Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (dev)
 $ touch home.html
@@ -243,4 +243,76 @@ Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/pr
 $
 
 ```
+
+## BUNDLE 2
+### EXERCISE 1 (terminal history)
+```bash
+
+```
+
+### EXERCISE 2 (terminal history)
+```bash
+
+```
+
+## BUNDLE 3
+### EXERCISE 1 (terminal history)
+```bash
+
+```
+
+### EXERCISE 2 (terminal history)
+```bash
+
+```
+
+## BUNDLE 4
+### EXERCISE 1 (terminal history)
+```bash
+
+```
+
+### EXERCISE 2 (terminal history)
+```bash
+
+```
+
+
+## BUNDLE 5
+### EXERCISE 1 (terminal history)
+```bash
+
+```
+
+### EXERCISE 2 (terminal history)
+```bash
+
+```
+
+
+## BUNDLE 6
+### EXERCISE 1 (terminal history)
+```bash
+
+```
+
+### EXERCISE 2 (terminal history)
+```bash
+
+```
+### EXERCISE 3 (terminal history)
+```bash
+
+```
+### EXERCISE 4 (terminal history)
+```bash
+
+```
+
+
+
+
+
+
+
 
