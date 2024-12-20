@@ -919,6 +919,117 @@ $
 ### EXERCISE 2 (terminal history)
 ```bash
 
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git checkout -b ft/footer
+Switched to a new branch 'ft/footer'
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ git remote -v
+git-copy        https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions-Copy.git (fetch)
+git-copy        https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions-Copy.git (push)
+origin  https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git (fetch)
+origin  https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git (push)
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ ls
+README.md  about.html  home.html  index.html  services.html  style.css  team.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ echo "<footer>Footer content version 1</footer>" >> footer.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ ls
+README.md  about.html  footer.html  home.html  index.html  services.html  style.css  team.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ git add footer.html
+warning: in the working copy of 'footer.html', LF will be replaced by CRLF the next time Git touches it
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ git commit -m "Added initital footer content"
+[ft/footer 10d1a83] Added initital footer content
+ 1 file changed, 1 insertion(+)
+ create mode 100644 footer.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ echo "<p>Added more footer details</p>" >> footer.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ cat footer.html
+<footer>Footer content version 1</footer>
+<p>Added more footer details</p>
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ git add footer.html
+warning: in the working copy of 'footer.html', LF will be replaced by CRLF the next time Git touches it
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ git commit -m "updated the content of footer.html with more details"
+[ft/footer 6765971] updated the content of footer.html with more details
+ 1 file changed, 1 insertion(+)
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ git push -u origin ft/footer
+Enumerating objects: 17, done.
+Counting objects: 100% (17/17), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (13/13), done.
+Writing objects: 100% (14/14), 3.24 KiB | 663.00 KiB/s, done.
+Total 14 (delta 6), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (6/6), completed with 2 local objects.
+remote:
+remote: Create a pull request for 'ft/footer' on GitHub by visiting:
+remote:      https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions/pull/new/ft/footer
+remote:
+To https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/footer -> ft/footer
+branch 'ft/footer' set up to track 'origin/ft/footer'.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/footer)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git checkout -b ft/squashing
+Switched to a new branch 'ft/squashing'
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/squashing)
+$ git merge --squash ft/footer
+Updating 886b5af..6765971
+Fast-forward
+Squash commit -- not updating HEAD
+ footer.html | 2 ++
+ 1 file changed, 2 insertions(+)
+ create mode 100644 footer.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/squashing)
+$ git commit -m "footer changes squashing"
+[ft/squashing 1e92a2c] footer changes squashing
+ 1 file changed, 2 insertions(+)
+ create mode 100644 footer.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/squashing)
+$ git push -u origin ft/squashing
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'ft/squashing' on GitHub by visiting:
+remote:      https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions/pull/new/ft/squashing
+remote:
+To https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git
+ * [new branch]      ft/squashing -> ft/squashing
+branch 'ft/squashing' set up to track 'origin/ft/squashing'.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/squashing)
+$
+
+
 ```
 
 
