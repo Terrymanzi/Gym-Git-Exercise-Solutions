@@ -834,6 +834,85 @@ $
 ## BUNDLE 4
 ### EXERCISE 1 (terminal history)
 ```bash
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (ft/home-page-redesign)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git remote add git-copy https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions-Copy.git
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ ls
+README.md  about.html  home.html  index.html  services.html  style.css  team.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ echo "<p>New changes for both remotes</p>" >> index.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git add index.html
+warning: in the working copy of 'index.html', LF will be replaced by CRLF the next time Git touches it
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git commit -m "updated the homepage for both remotes"
+[main 6a2e47a] updated the homepage for both remotes
+ 1 file changed, 1 insertion(+)
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git push origin main
+To https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (3/3), done.
+remote: Total 3 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 2.06 KiB | 18.00 KiB/s, done.
+From https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions
+   3d26f20..d717494  main       -> origin/main
+Merge made by the 'ort' strategy.
+ README.md | 168 ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+ 1 file changed, 168 insertions(+)
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git push origin main
+Enumerating objects: 9, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 634 bytes | 317.00 KiB/s, done.
+Total 5 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+To https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions.git
+   d717494..886b5af  main -> main
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ git push git-copy main
+Enumerating objects: 49, done.
+Counting objects: 100% (49/49), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (47/47), done.
+Writing objects: 100% (49/49), 15.32 KiB | 540.00 KiB/s, done.
+Total 49 (delta 15), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (15/15), done.
+To https://github.com/Terrymanzi/Gym-Git-Exercise-Solutions-Copy.git
+ * [new branch]      main -> main
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$ ls
+README.md  about.html  home.html  index.html  services.html  style.css  team.html
+
+Terry@DESKTOP-MAAMI2P MINGW64 ~/Desktop/The Gym Program/Learning/Git Learning/project_1 (main)
+$
+
 
 ```
 
